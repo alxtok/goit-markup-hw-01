@@ -10,13 +10,26 @@ body {
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
-    --primary-br-color: #2196F3;
+    --main-br-btn-color: #188CE8;
+    --primary-br-btn-color: #F5F4FA;
     --main-wite-color:#FFFFFF;
     --contact-color: rgba(255, 255, 255, 0.6);
 }
 .list {
     list-style: none;
 }
+address {
+    font-style: normal;
+    font-size: inherit;
+    color: inherit;
+}
+button {
+    font-style: normal;
+    font-size: inherit;
+    color: inherit;
+    background: inherit;
+}
+/* -------------------------top line------------------------------------------- */
 .logo {
     font-family: Raleway;
     font-style: normal;
@@ -32,16 +45,8 @@ body {
     text-decoration: none;
     font-family: inherit;
 }
-.button{
-    background-color: var(--primary-br-color);
-    color: var(--main-wite-color);
-    font-family: inherit;
-}
-address {
-    font-style: normal;
-    font-size: inherit;
-    color: inherit;
-}
+
+
 
 /* -------------------------header------------------------------------------- */
 .menu-nav .link{
@@ -74,7 +79,12 @@ address {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color:var(--main-wite-color);
-}
+    }
+    .main-button{
+        color: var(--main-wite-color);
+        background-color: var(--main-br-btn-color);
+        font-family: inherit;
+    }
 /* -------------------------------------------features----------------------------------------------- */
 .visually-hidden {
     position: absolute;
@@ -105,7 +115,7 @@ address {
     color: var(--title-text-color)
 }
 /* -------------------------------------------our team----------------------------------------------- */
-.team-member {
+.image-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -113,7 +123,7 @@ address {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-.team-position {
+.image-definition {
     text-align: center;
     font-size: 16px;
     line-height: 1.19;
@@ -137,3 +147,18 @@ font-style: normal;
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
+
+.primary-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    background: var(--primary-br-btn-color);
+}
+
+.primary-button:hover, .primary-button:focus {
+    color: var(--main-wite-color);
+    background: var(--main-br-btn-color);
+    }
