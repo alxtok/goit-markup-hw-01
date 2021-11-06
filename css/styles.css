@@ -39,9 +39,6 @@ button {
     text-decoration: none;
     font-family: inherit;
 }
-
-
-
 /* -------------------------header------------------------------------------- */
 .menu-nav .link{
     color: var(--title-text-color);
