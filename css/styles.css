@@ -1,11 +1,3 @@
-body {
-    font-family: Roboto;
-    color: var(--primary-text-color);
-    font-size: 14px;
-    line-height: 1.171;
-    font-style: normal;
-    font-weight: normal;
-}
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -15,31 +7,33 @@ body {
     --main-wite-color:#FFFFFF;
     --contact-color: rgba(255, 255, 255, 0.6);
 }
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 1.171;
+}
+
 .list {
     list-style: none;
 }
 address {
     font-style: normal;
-    font-size: inherit;
-    color: inherit;
 }
 button {
-    font-style: normal;
-    font-size: inherit;
-    color: inherit;
-    background: inherit;
+    font-family: inherit;
 }
 /* -------------------------top line------------------------------------------- */
 .logo {
     font-family: Raleway;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--title-textcolor);
+    color: var(--title-text-color);
+    letter-spacing: 0.03em;
 }
 .web {
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
 .link {
     text-decoration: none;
@@ -50,7 +44,7 @@ button {
 
 /* -------------------------header------------------------------------------- */
 .menu-nav .link{
-    color: var(--title-text-color)
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -62,7 +56,7 @@ button {
 .contact {
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
 }
 .contact .link:hover, .contact .link:focus {
     color: var(--accent-color);
@@ -83,7 +77,13 @@ button {
     .main-button{
         color: var(--main-wite-color);
         background-color: var(--main-br-btn-color);
-        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
     }
 /* -------------------------------------------features----------------------------------------------- */
 .visually-hidden {
@@ -124,30 +124,42 @@ button {
     color: var(--title-text-color);
 }
 .image-definition {
-    text-align: center;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 /* -------------------------------------------footer----------------------------------------------- */
 footer {
     background: #2F303A;
 }
-.footer-contact .link {
-color: var(--contact-color);
-font-family: inherit;
-font-style: normal;
+.footer-contact .link{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--contact-color)
+    }
+.footer-contact .link:hover, .footer-contact .link:focus {
+    color: var(--accent-color);
 }
 .contact-adress {
     color: var(--main-wite-color);
     text-decoration: none;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    }
+
+.contact-adress:hover, .contact-adress:focus {
+    color: var(--accent-color);
 }
+
 .footer-logo {
     color: var(--main-wite-color);
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
-
+/* -------------------------------------------portfolio----------------------------------------------- */
 .primary-button {
     font-weight: 500;
     font-size: 16px;
