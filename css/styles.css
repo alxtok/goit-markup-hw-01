@@ -254,6 +254,8 @@ footer {
     padding: 60px 0;
 }
 .footer-logo {
+    font-family: Raleway;
+    font-weight: bold;
     display: block;
     color: var(--main-wite-color);
     font-size: 26px;
