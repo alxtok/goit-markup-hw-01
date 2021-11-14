@@ -50,7 +50,6 @@ button {
 }
 a {
     text-decoration: none;
-    color: inherit;
 }
 .container {
     width: 1200px;
@@ -112,6 +111,9 @@ padding-top: 24px 0 25px 0;
     line-height: 1.14;
     letter-spacing: 0.02em;
     align-items: center;
+}
+.menu-nav-link {
+    color: var(--title-text-color);
 }
 .menu-nav-item:not(:last-child) {
     margin-right: 50px;
