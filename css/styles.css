@@ -125,7 +125,17 @@ padding-top: 24px 0 25px 0;
 .contacts {
     display: flex;
 }
-
+.contact-link::before {
+    content: url(./images/icons.svg#icon-envelope);
+    background-image: url(./images/icons.svg#icon-envelope);
+}
+.contact-link-img {
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+}
+.contact-link-img:hover, .contact-link-img:focus {
+    fill: var(--accent-color);
+}
 .contact-item:not(:last-child) {
     margin-right: 50px;
 }
@@ -144,6 +154,10 @@ padding-top: 24px 0 25px 0;
 .hero {
     padding: 200px 0;
     background-color: var(--bgr-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     text-align: center;
     max-width: 100%;
     margin: 0 auto;
@@ -181,6 +195,15 @@ padding-top: 24px 0 25px 0;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+.feature-conteiner {
+    background-color: var(--primary-br-btn-color);
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .features {
@@ -253,10 +276,76 @@ padding-top: 24px 0 25px 0;
     text-align: center;
     letter-spacing: 0.03em;
 }
+.team-social-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.team-social-item + .team-social-item {
+    margin-left: 10px;
+}
+
+.team-social-link {
+    width: 44px;
+    height: 44px;
+    background-color: var(--main-wite-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team-social-icon {
+    fill: #AFB1B8;
+}
+.team-social-link:hover,
+.team-social-link:focus {
+background: var(--accent-color);
+}
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon {
+    fill: var(--main-wite-color);
+    }
+/* -------------------------------------------clints----------------------------------------------- */
+.clints {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.clint {
+    width: 170px;
+    height: 120px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clint:not(:last-child) {
+    margin-right: 30px;
+}
+.clint-icon {
+    fill: #AFB1B8;
+}
+.clint:hover .clint-icon,
+.clint:focus .clint-icon {
+    fill:var(--accent-color);
+}
+.clint:hover, .clint:focus {
+    border: 1px solid var(--accent-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
 /* -------------------------------------------footer----------------------------------------------- */
 footer {
     background: var(--bgr-color);
     padding: 60px 0;
+}
+.footer-container {
+    display: flex;
+    align-items: baseline;
 }
 .footer-logo {
     font-family: Raleway;
@@ -274,7 +363,8 @@ footer {
     letter-spacing: 0.03em;
     color: var(--contact-color)
     }
-.footer-contact .link:hover, .footer-contact .link:focus {
+.footer-contact .link:hover, 
+.footer-contact .link:focus {
     color: var(--accent-color);
 }
 .contact-adress {
@@ -290,6 +380,41 @@ footer {
 .footer-contact-item:not(:first-child) {
     margin-top: 9px;
 }
+.footer-follow {
+    margin-left: 70px;
+}
+.social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-follow-title {
+    text-transform: uppercase;
+    color: var(--main-wite-color);
+    margin-bottom: 20px;
+}
+
+.social-network-link {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-network-link:hover, .social-network-link:focus {
+    background: var(--accent-color);
+}
+.social-network + .social-network {
+    margin-left: 10px;
+}
+.social-network-icon {
+    fill: var(--main-wite-color);
+}
+
+
+
 /* -------------------------------------------portfolio----------------------------------------------- */
 
 .filters {
@@ -346,6 +471,10 @@ footer {
 .portfolio .item:nth-of-type(-n+3) {
     margin-top: 0px;
 }
+.portfolio-item:hover, .portfolio-item:focus {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .image-title-port {
     font-weight: 700;
     font-size: 16px;
